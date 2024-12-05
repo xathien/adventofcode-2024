@@ -30,7 +30,6 @@ sum = File.readlines('input2')
         arr.insert(insert_index, pg)
       end
     }
-    puts "SORTED? #{arr}"
     arr[(arr.size-1)/2].to_i
   end
 
