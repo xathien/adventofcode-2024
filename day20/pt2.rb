@@ -75,10 +75,7 @@ route_count = distances.sum { |(y, x), steps_so_far|
     neighbor_distance = distances[neighbor]
     next false if neighbor_distance.infinite?
     time_saved = (neighbor_distance - steps_so_far) - (dy.abs + dx.abs)
-    if time_saved >= minimum_saved
-      next true
-    end
-    false
+    time_saved >= minimum_saved
   }
 }
 # puts "By time: #{savings_by_time}"
